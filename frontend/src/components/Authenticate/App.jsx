@@ -1,5 +1,3 @@
-// App.jsx
-
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './Login';
@@ -9,10 +7,13 @@ import Activate from './Activate';
 import ForgotPassword from './ForgotPassword';
 import Home from './Home';
 import Vactivate from './Vactivate';
+import Result from './dashboard/Result';
+import Exam from './dashboard/Exam';
+import Profile from './dashboard/Profile';
 
 function App() {
   return (
-    <div style={{ marginTop: '-3.5rem' }}>
+    <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
@@ -23,6 +24,10 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path='/reactivate' element={<Reactivate/>}/>
           <Route path='/vactivate' element={<Vactivate/>}/>
+          <Route path='/profile' element={<Profile/>}/>
+          <Route path='/exam' element={<Exam/>} />
+          <Route path='/result' element={<Result/>}/>
+          <Route path='/dashboard' element={<Home/>}/>
         </Routes>
       </BrowserRouter>
     </div>
