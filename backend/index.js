@@ -9,7 +9,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/employee');
+mongoose.connect('mongodb://localhost:27017/employee').then(()=>{
+  console.log('Mongodb database Connected......')
+}).catch((err)=>{console.log(err)});
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
