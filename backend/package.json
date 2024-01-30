@@ -8,7 +8,7 @@
     "start" : "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Maddipati Sri Rama Krishna",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
